@@ -2,13 +2,10 @@
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with hipchat](#setup)
-    * [What hipchat affects](#what-hipchat-affects)
-    * [Setup requirements](#setup-requirements)
-    * [Beginning with hipchat](#beginning-with-hipchat)
-4. [Usage - Configuration options and additional functionality](#usage)
+3. [Setup - The basics of getting started with hipchat](#Setup)
+4. [Usage - Configuration options and additional functionality](#Usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
+5. [Limitations - OS compatibility, etc.](#Limitations)
 6. [Development - Guide for contributing to the module](#development)
 
 ## Overview
