@@ -18,10 +18,12 @@ file {'/tmp/hipchat-linux.key':
 exec {'add_key':
   command =>'/usr/bin/apt-key add /tmp/hipchat-linux.key',
   require => File['/tmp/hipchat-linux.key'],
+  unless => '/usr/bin/apt-key list | grep HipChat',
+  notify => Exec['apt-get_update'],
 }
 exec { 'apt-get_update':
     command => '/usr/bin/apt-get update',
-    require => Exec['add_key'],
+    refreshonly => true,
   }
 
   package { $::hipchat::package_name:
